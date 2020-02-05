@@ -1,0 +1,57 @@
+.Layout {
+    background: #eee;
+    padding:30px;
+    max-width:900px;
+    margin:50px auto;
+}
+.TopFields {
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-end;
+}
+.TopFields > div {
+    margin-right:10px;
+    flex:1;
+}
+.TopFields label {
+    cursor: pointer;
+    font-size:12px;
+    margin-bottom:5px;
+}
+.TopFields input, .TopFields button {
+    padding: 5px 7px;
+    outline:0;
+}
+.TopFields input {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+}
+.TopFields button {cursor: pointer;}
+
+.Content {
+    background: #fff;
+    margin-top:30px;
+    min-height:500px;
+    padding: 10px;
+}
+
+.Content div {
+    border: 1px solid #777;
+    margin: 5px;
+    padding: 10px;
+}
+
+.Content span {
+    background: #eee;
+    display: inline-block;
+    margin:5px;
+    padding:7px;
+}
+.Content button {
+    background: #aaa;
+    color: #fff;
+    display: block;
+    margin:5px;
+    padding:7px;
+}
