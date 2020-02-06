@@ -65,7 +65,7 @@ export default function rootReducer(state = initialState, action) {
     if(inputPath !== null) {
 
         let parts = inputPath.split(".");
-        let current = state;
+        let current = {...state}
         let ArLength = parts.length;
 
         try {
@@ -77,7 +77,7 @@ export default function rootReducer(state = initialState, action) {
 
                     current = current['content'][contentIndex]
                 }
-                else current = current[parts[i]];
+                else current = current[parts[i]]
 
                 if (!current) break
             }
@@ -103,5 +103,6 @@ export default function rootReducer(state = initialState, action) {
             alert('rootReducer error: ' + error)
         }
     }
+
     return {content: [...content]}
 }
